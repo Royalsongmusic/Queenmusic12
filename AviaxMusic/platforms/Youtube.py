@@ -11,8 +11,8 @@ from youtubesearchpython.__future__ import VideosSearch
 from yt_dlp import YoutubeDL
 
 import config
-from ChampuMusic.utils.database import is_on_off
-from ChampuMusic.utils.formatters import time_to_seconds
+from AviaxMusic.utils.database import is_on_off
+from AviaxMusic.utils.formatters import time_to_seconds
 
 
 def cookie_text_file():
@@ -428,3 +428,4 @@ class YouTubeAPI:
             downloaded_file = await loop.run_in_executor(None, audio_dl)
 
         return downloaded_file, direct
+
