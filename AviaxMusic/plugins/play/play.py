@@ -547,7 +547,7 @@ async def play_playlists_command(client, CallbackQuery, _):
     await CallbackQuery.message.delete()
     try:
         await CallbackQuery.answer()
- except:
+    except:
         pass
     mystic = await CallbackQuery.message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
@@ -670,5 +670,5 @@ async def slider_queries(client, CallbackQuery, _):
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
-    )
-    
+        )
+
