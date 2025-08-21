@@ -21,7 +21,7 @@ from AviaxMusic.utils.inline import (
     track_markup,
 )
 from AviaxMusic.utils.logger import play_logs
-from AviaxMusic import stream
+from AviaxMusic.import stream
 from config import BANNED_USERS, lyrical
 
 
