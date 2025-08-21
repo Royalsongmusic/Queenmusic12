@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AviaxMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AviaxMusic.core.call import BRANDED
+from AviaxMusic.core.call import Aviax
 from AviaxMusic.utils import seconds_to_min, time_to_seconds
 from AviaxMusic.utils.channelplay import get_channeplayCB
 from AviaxMusic.utils.decorators.language import languageCB
