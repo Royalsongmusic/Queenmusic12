@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from BRANDEDKING import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from BRANDEDKING.core.call import BRANDED
-from BRANDEDKING.utils import seconds_to_min, time_to_seconds
-from BRANDEDKING.utils.channelplay import get_channeplayCB
-from BRANDEDKING.utils.decorators.language import languageCB
-from BRANDEDKING.utils.decorators.play import PlayWrapper
-from BRANDEDKING.utils.formatters import formats
-from BRANDEDKING.utils.inline import (
+from AviaxMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from AviaxMusic.core.call import BRANDED
+from AviaxMusic.utils import seconds_to_min, time_to_seconds
+from AviaxMusic.utils.channelplay import get_channeplayCB
+from AviaxMusic.utils.decorators.language import languageCB
+from AviaxMusic.utils.decorators.play import PlayWrapper
+from AviaxMusic.utils.formatters import formats
+from AviaxMusic.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from BRANDEDKING.utils.logger import play_logs
-from BRANDEDKING.utils.stream.stream import stream
+from AviaxMusic.utils.logger import play_logs
+from AviaxMusic import stream
 from config import BANNED_USERS, lyrical
 
 
