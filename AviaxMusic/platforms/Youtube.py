@@ -14,8 +14,8 @@ import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
-from ERAVIBES.utils.database import is_on_off
-from ERAVIBES.utils.formatters import time_to_seconds
+from AviaxMusic.utils.database import is_on_off
+from AviaxMusic.utils.formatters import time_to_seconds
 
 # Global caching for cookie file path and video info
 _cached_cookie = None
@@ -491,3 +491,4 @@ class YouTubeAPI:
             downloaded_file = await audio_dl()
             direct = True
         return downloaded_file, direct
+
