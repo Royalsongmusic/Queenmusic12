@@ -59,11 +59,11 @@ async def gen_thumb(videoid: str):
             raise ValueError("No results found.")
         data = result_items[0]
         title = re.sub(r"\W+", " ", data.get("title", "Unsupported Title")).title()
-        thumbnail = data.get("thumbnails", [{}])[0].get("url", YOUTUBE_IMG_URL)
+        thumbnail = data.get("thumbnails", [{}])[0].get("url", VideosSearch)
         duration = data.get("duration")
         views = data.get("viewCount", {}).get("short", "Unknown Views")
     except Exception:
-        title, thumbnail, duration, views = "Unsupported Title", YOUTUBE_IMG_URL, None, "Unknown Views"
+        title, thumbnail, duration, views = "Unsupported Title", VideosSearch, None, "Unknown Views"
 
     is_live = not duration or str(duration).strip().lower() in {"", "live", "live now"}
     duration_text = "Live" if is_live else duration or "Unknown Mins"
