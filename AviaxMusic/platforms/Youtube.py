@@ -8,20 +8,20 @@ import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from py_yt import VideosSearch
-from BRANDEDKING.utils.database import is_on_off
-from BRANDEDKING import app
-from BRANDEDKING.utils.formatters import time_to_seconds
+from AviaxMusic.utils.database import is_on_off
+from AviaxMusic import app
+from AviaxMusic.utils.formatters import time_to_seconds
 import random
 import logging
 import aiohttp
-from BRANDEDKING import LOGGER
+from AviaxMusic import LOGGER
 from urllib.parse import urlparse
 
 YOUR_API_URL = None
 
 async def load_api_url():
     global YOUR_API_URL
-    logger = LOGGER("ShrutiMusic.platforms.Youtube.py")
+    logger = LOGGER("AviaxMusic.platforms.Youtube.py")
     
     try:
         async with aiohttp.ClientSession() as session:
@@ -492,3 +492,4 @@ class YouTubeAPI:
         except Exception as e:
             print(f"Download failed: {e}")
             return None, False
+
