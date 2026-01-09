@@ -16,9 +16,9 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-API_URL = getenv("API_URL", 'http://api.nexgenbots.xyz') #youtube song url
-VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
-API_KEY = getenv("API_KEY", None) # youtube song api key, generate free key or buy paid plan from panel.thequickearn.xyz
+# Vars For API End Pont.
+YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
+YT_API_KEY = getenv("YT_API_KEY" , None ) ## Your API key like: xbit_10000000xx0233 Get from  https://t.me/tgmusic_apibot
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 999999))
 
@@ -121,6 +121,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
