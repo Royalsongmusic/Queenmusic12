@@ -20,13 +20,14 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
 YT_API_KEY = getenv("YT_API_KEY" , None ) ## Your API key like: xbit_10000000xx0233 Get from  https://t.me/tgmusic_apibot
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 999999))
+## Other vaes
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
 
 # Chat id of a group for logging bot's activities
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
+LOGGER_ID = int(getenv("LOGGER_ID"))
 
-# Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", None))
+# Get this value from @FallenxBot on Telegram by /id
+OWNER_ID = int(getenv("OWNER_ID"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -121,6 +122,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
