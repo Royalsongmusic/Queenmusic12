@@ -115,7 +115,7 @@ async def _download_image(session, url, path):
         return False
     return False
 
-async def get_thumb(videoid: str) -> str:
+async def gen_thumb(videoid: str) -> str:
     cache_path = os.path.join(CACHE_DIR, f"{videoid}_cinematic_final.png")
     if os.path.exists(cache_path):
         return cache_path
@@ -223,3 +223,4 @@ async def get_thumb(videoid: str) -> str:
         pass
 
     return cache_path
+
