@@ -13,7 +13,7 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from ytSearch import VideosSearch, CustomSearch
+from py_yt import VideosSearch, Playlist
 import base64
 from AnonXMusic import LOGGER
 from AnonXMusic.utils.database import is_on_off
@@ -634,3 +634,4 @@ class YouTubeAPI:
             downloaded_file = await audio_dl(vid_id)
         
         return downloaded_file, direct
+
