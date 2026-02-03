@@ -18,7 +18,7 @@ import base64
 from AviaxMusic import LOGGER
 from AviaxMusic.utils.database import is_on_off
 from AviaxMusic.utils.formatters import time_to_seconds
-from config import YT_API_KEY, YTPROXY_URL as YTPROXY
+from config import API_URL, VIDEO_API_URL, API_KEY
 
 logger = LOGGER(__name__)
 
@@ -634,5 +634,6 @@ class YouTubeAPI:
             downloaded_file = await audio_dl(vid_id)
         
         return downloaded_file, direct
+
 
 
