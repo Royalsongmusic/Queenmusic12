@@ -34,7 +34,8 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
 YT_API_KEY = getenv("YT_API_KEY" , None ) ## Your API key like: xbit_10000000xx0233 Get from  https://t.me/tgmusic_apibot
 
-"UPSTREAM_REPO",
+UPSTREAM_REPO = getenv(
+    "UPSTREAM_REPO",
     "https://github.com/Royalsongmusic/Queenmusic12",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
@@ -120,6 +121,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
