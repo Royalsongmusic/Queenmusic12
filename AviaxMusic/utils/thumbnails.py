@@ -11,8 +11,8 @@ from config import YOUTUBE_IMG_URL
 CACHE_DIR = "cache"
 os.makedirs(CACHE_DIR, exist_ok=True)
 
-TITLE_FONT_PATH = "src/assets/font2.ttf"
-META_FONT_PATH = "src/assets/font.ttf"
+TITLE_FONT_PATH = "AviaxMusic/assets/font2.ttf"
+META_FONT_PATH = "AviaxMusic/assets/font.ttf"
 
 def load_font(path, size: int):
     try:
@@ -221,4 +221,5 @@ async def get_thumb(videoid: str) -> str:
         os.remove(thumb_path)
     except OSError:
         pass
+
     return cache_path
