@@ -93,7 +93,7 @@ async def _get_fallback_thumb_local():
     return None
 
 
-async def get_thumb(videoid: str):
+async def gen_thumb(videoid: str):
     url = f"https://www.youtube.com/watch?v={videoid}"
     try:
         results = VideosSearch(url, limit=1)
@@ -173,3 +173,4 @@ async def get_thumb(videoid: str):
         fallback = await _get_fallback_thumb_local()
 
         return fallback
+
