@@ -10,7 +10,7 @@ import aiofiles
 import traceback
 
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
-from py_yt import VideosSearch, Playlist
+from py_yt import VideosSearch
 from config import YOUTUBE_IMG_URL
 
 
@@ -173,5 +173,6 @@ async def gen_thumb(videoid: str):
         fallback = await _get_fallback_thumb_local()
 
         return fallback
+
 
 
