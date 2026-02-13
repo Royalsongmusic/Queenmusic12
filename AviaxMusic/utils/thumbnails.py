@@ -11,7 +11,7 @@ import traceback
 
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from py_yt import VideosSearch
-
+from config import YOUTUBE_IMG_URL
 
 try:
     RESAMPLE = Image.Resampling.LANCZOS
@@ -172,6 +172,7 @@ async def gen_thumb(videoid: str):
         fallback = await _get_fallback_thumb_local()
 
         return fallback
+
 
 
 
