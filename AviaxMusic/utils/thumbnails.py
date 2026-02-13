@@ -126,8 +126,8 @@ async def get_thumb(videoid: str):
         background.paste(logo, (100, 150), logo)
 
         draw = ImageDraw.Draw(background)
-        font_info = ImageFont.truetype("BillaMusic/assets/font2.ttf", 28)
-        font_time = ImageFont.truetype("BillaMusic/assets/font2.ttf", 26)
+        font_info = ImageFont.truetype("AviaxMusic/assets/font2.ttf", 28)
+        font_time = ImageFont.truetype("AviaxMusic/assets/font2.ttf", 26)
         font_path = "BillaMusic/assets/font3.ttf"
 
         title_max_width = 540
@@ -147,7 +147,7 @@ async def get_thumb(videoid: str):
         draw.ellipse([(990, 362), (1010, 382)], outline=rand, fill=rand, width=12)
         draw.text((1080, 385), duration, (255, 255, 255), font=font_time)
 
-        watermark_font = ImageFont.truetype("BillaMusic/assets/font2.ttf", 24)
+        watermark_font = ImageFont.truetype("AviaxMusic/assets/font2.ttf", 24)
         watermark_text = "Billa=Space"
         text_size = draw.textsize(watermark_text, font=watermark_font)
         x = background.width - text_size[0] - 25
@@ -171,4 +171,5 @@ async def get_thumb(videoid: str):
     except:
         traceback.print_exc()
         fallback = await _get_fallback_thumb_local()
+
         return fallback
