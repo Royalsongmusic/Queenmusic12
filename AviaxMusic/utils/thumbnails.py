@@ -127,7 +127,7 @@ async def gen_thumb(videoid: str):
         draw = ImageDraw.Draw(background)
         font_info = ImageFont.truetype("AviaxMusic/assets/font2.ttf", 28)
         font_time = ImageFont.truetype("AviaxMusic/assets/font2.ttf", 26)
-        font_path = "BillaMusic/assets/font3.ttf"
+        font_path = "AviaxMusic/assets/font3.ttf"
 
         title_max_width = 540
         title_lines = truncate(title, 35)
@@ -172,6 +172,7 @@ async def gen_thumb(videoid: str):
         fallback = await _get_fallback_thumb_local()
 
         return fallback
+
 
 
 
