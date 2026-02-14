@@ -15,7 +15,7 @@ from PIL import (
     ImageFilter,
     ImageFont,
 )
-from youtubesearchpython.__future__ import VideosSearch
+from py_yt import VideosSearch
 from config import YOUTUBE_IMG_URL
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
@@ -60,7 +60,7 @@ def get_contrasting_color(bg_color):
     
     # Return white for dark backgrounds, dark for light backgrounds
     return (255, 255, 255) if luminance < 128 else (50, 50, 50)
-async def get_thumb(videoid):
+async def gen_thumb(videoid):
     final_path = f"cache/{videoid}.png"
     if os.path.isfile(final_path):
         return final_path
@@ -117,9 +117,9 @@ async def get_thumb(videoid):
                 return ImageFont.truetype(path, size)
             except:
                 return ImageFont.load_default()
-        font = safe_font("OpusV/resources/font.ttf", 30)
-        font2 = safe_font("OpusV/resources/font.ttf", 30)
-        arial = safe_font("OpusV/resources/font2.ttf", 30)
+        font = safe_font("AviaxMusic/assets/font.ttf", 30)
+        font2 = safe_font("AviaxMusic/assets/font.ttf", 30)
+        arial = safe_font("AviaxMusic/assets/font2.ttf", 30)
         # Draw text
         draw = ImageDraw.Draw(background)
         # Channel | Views
@@ -152,3 +152,4 @@ async def get_thumb(videoid):
     except Exception:
         return YOUTUBE_IMG_URL
     
+
