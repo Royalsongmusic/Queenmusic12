@@ -1,4 +1,3 @@
-<BatBin/>
 # a part of Opus Music Project 2025 ©
 # this code is & will be our property as it is or even after modified 
 # must give credits if used this code anywhere 
@@ -152,4 +151,5 @@ async def gen_thumb(videoid):
     except Exception:
         return YOUTUBE_IMG_URL
     
+
 
