@@ -133,7 +133,7 @@ async def gen_thumb(videoid):
         draw.line((150, 660, 1130, 660), width=6, fill=bar_color)
         # Recreation Music text at right side of center thumbnail
         rec_font = safe_font("OpusV/resources/font.ttf", 40)
-        rec_text = "𝙌𝙪𝙚𝙚𝙣 𝙭 𝙢𝙪𝙨𝙞𝙘"
+        rec_text = "QUEEN X MUSIC"
         bbox = draw.textbbox((0, 0), rec_text, font=rec_font)
         rec_text_w = bbox[2] - bbox[0]
         rec_text_h = bbox[3] - bbox[1]
@@ -151,6 +151,7 @@ async def gen_thumb(videoid):
     except Exception:
         return YOUTUBE_IMG_URL
     
+
 
 
 
