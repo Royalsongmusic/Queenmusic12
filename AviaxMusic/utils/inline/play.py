@@ -54,7 +54,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "▬▭▬▭▬▭▬▭"
     buttons = [
         [
-            InlineKeyboardButton(Green="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(Green="▶️", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
@@ -154,4 +154,5 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
         ],
     ]
     return buttons
+
 
