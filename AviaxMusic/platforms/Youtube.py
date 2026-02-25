@@ -18,8 +18,8 @@ from py_yt import VideosSearch
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 
-from AloneMusic import LOGGER
-from AloneMusic.utils.formatters import time_to_seconds
+from AviaxMusic import LOGGER
+from AviaxMusic.utils.formatters import time_to_seconds
 
 YOUR_API_URL = None
 FALLBACK_API_URL = "https://shrutibots.site"
@@ -375,3 +375,4 @@ class YouTubeAPI:
                 return None, False
         except Exception:
             return None, False
+
