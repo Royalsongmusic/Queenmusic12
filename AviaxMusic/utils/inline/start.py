@@ -25,6 +25,7 @@ def private_panel(_):
                 style=ButtonStyle.DANGER,
             )
         ],
+        [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")],
         [
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID, style=ButtonStyle.SUCCESS),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP, style=ButtonStyle.SUCCESS),
