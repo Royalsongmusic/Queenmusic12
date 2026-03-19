@@ -149,10 +149,10 @@ async def play_commnd(
     if url:
         if not is_safe_url(url):
             return await mystic.edit_text(
-                "⚠️ <b>Security Alert!</b>\n\n"
-                "<b>Invalid or potentially harmful URL detected.</b>\n"
-                "Only valid music platform URLs are allowed.\n\n"
-                "Protected From @II_ROYALENTRY1128_II"
+                "🚫 Alert!
+                "The link you entered is invalid or potentially harmful.
+                "Please use only verified music platform URLs.
+                "Secured by @II_ROYALENTRY1128_II
             )
 
     if audio_telegram:
