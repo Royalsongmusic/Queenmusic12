@@ -13,8 +13,8 @@ from pathlib import Path
 
 from py_yt import Playlist, VideosSearch
 
-from anony import config, logger
-from anony.helpers import NexGenApi, Track, utils
+from AviaxMusic import config, logger
+from AviaxMusic.helpers import NexGenApi, Track, utils
 
 
 class YouTube:
