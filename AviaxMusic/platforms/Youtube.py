@@ -19,9 +19,9 @@ from py_yt import VideosSearch
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message, InlineKeyboardMarkup
 
-from AloneMusic import LOGGER, app
-from AloneMusic.utils.database import is_thumb_on
-from AloneMusic.utils.formatters import time_to_seconds
+from AviaxMusic import LOGGER, app
+from AviaxMusic.utils.database import is_thumb_on
+from AviaxMusic.utils.formatters import time_to_seconds
 
 YOUR_API_URL = None
 FALLBACK_API_URL = "https://shrutibots.site"
