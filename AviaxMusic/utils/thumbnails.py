@@ -31,7 +31,7 @@ def trim_to_width(text: str, font: ImageFont.FreeTypeFont, max_width: int) -> st
             return new
     return ellipsis
 
-async def get_thumb(videoid: str, player_username: str = None) -> str:
+async def gen_thumb(videoid: str, player_username: str = None) -> str:
     if player_username is None:
         player_username = app.username
 
