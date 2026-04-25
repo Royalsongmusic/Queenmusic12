@@ -16,7 +16,7 @@ import os, aiofiles, aiohttp
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from py_yt import VideosSearch
 from config import YOUTUBE_IMG_URL
-from ShashankMusic import app
+from AviaxMusic import app
 
 CACHE_DIR = "cache"
 os.makedirs(CACHE_DIR, exist_ok=True)
@@ -76,8 +76,8 @@ async def get_thumb(videoid: str, player_username: str = None) -> str:
     draw = ImageDraw.Draw(bg)
 
     try:
-        font_bold = "ShashankMusic/assets/font2.ttf"
-        font_med = "ShashankMusic/assets/font.ttf"
+        font_bold = "AviaxMusic/assets/font2.ttf"
+        font_med = "AviaxMusic/assets/font.ttf"
         title_font = ImageFont.truetype(font_bold, 60)
         artist_font = ImageFont.truetype(font_med, 40)
         time_font = ImageFont.truetype(font_med, 32)
